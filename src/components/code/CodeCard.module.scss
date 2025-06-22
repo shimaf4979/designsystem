@@ -1,0 +1,6 @@
+@use "./../../styles/utils.module.scss" as utils;
+
+.codeCardContainer {
+  max-width: 90vw;
+  border-radius: 1rem;
+}
