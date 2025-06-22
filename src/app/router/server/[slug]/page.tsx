@@ -3,35 +3,35 @@ import styles from "./page.module.scss";
 import CodeCard from "@/components/code/CodeCard";
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
-  searchParams: {
+  }>;
+  searchParams: Promise<{
     paramfirst?: string;
     paramsecond?: string;
-  };
+  }>;
 }
 
-const Page = ({ params, searchParams }: PageProps) => {
-  const { slug } = params;
-  const { paramfirst, paramsecond } = searchParams;
+const Page = async ({ params, searchParams }: PageProps) => {
+  const { slug } = await params;
+  const { paramfirst, paramsecond } = await searchParams;
 
   const codeExample = `
 import React from "react";
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
-  searchParams: {
+  }>;
+  searchParams: Promise<{
     paramfirst?: string;
     paramsecond?: string;
-  };
+  }>;
 }
 
-const Page = ({ params, searchParams }: PageProps) => {
-  const { slug } = params;
-  const { paramfirst, paramsecond } = searchParams;
+const Page = async ({ params, searchParams }: PageProps) => {
+  const { slug } = await params;
+  const { paramfirst, paramsecond } = await searchParams;
 
   return (
     <div>

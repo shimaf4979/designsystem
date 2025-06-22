@@ -149,7 +149,7 @@ const handleNavigation = () => {
   return (
     <div className={styles.container}>
       <div className={styles.flexColumn}>
-        <p className={styles.infoSection}>Next.js Routing(v14~/App Router)</p>
+        <p className={styles.infoSection}>Next.js Routing(v15~/App Router)</p>
         <div className={styles.flexRow}>
           <div className={styles.routingTypeSection}>
             <div>
