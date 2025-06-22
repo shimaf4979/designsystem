@@ -5,7 +5,6 @@ import styles from "./page.module.scss";
 const page = () => {
   return (
     <div className={styles.container}>
-      page
       <Link href="/router" className={styles.link}>
         Go Router
       </Link>
