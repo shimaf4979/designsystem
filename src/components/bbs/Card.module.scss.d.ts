@@ -1,0 +1,9 @@
+export declare const actions: string;
+export declare const body: string;
+export declare const button: string;
+export declare const card: string;
+export declare const content: string;
+export declare const edit: string;
+export declare const info: string;
+export declare const meta: string;
+export declare const title: string;
